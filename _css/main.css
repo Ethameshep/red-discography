@@ -1,0 +1,483 @@
+/*
+Developer: Ethan Sheppard
+*****************************
+Table of Contents:
+0. GLOBAL
+1. HEADER AND NAV
+2. ABOUT
+3. DISCOGRAPHY
+4. GALLERY
+5. CONNECT
+6. FOOTER
+7. MEDIA QUERIES
+****************************
+Color Palette:
+#000 - Black (Primary)
+#B20000 (178,0,0) - Dark Red(Secondary)
+#fff - White (Accent)
+#B20000 (255,0,0) - Red (Accent)
+#D3D3D3 - Light Grey (Accent)
+****************************
+*/
+
+/*****************************************
+0. GLOBAL
+*****************************************/
+body{
+  color: #fff;
+  background-color: #000;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Sarpanch', Helvetica, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 3% 0 1.5%;
+}
+a{
+  font-family: 'Sarpanch', Helvetica, sans-serif;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover,a:active{
+  transition: all 0.2s ease-in-out;
+  color: #D3D3D3;
+}
+.body{
+  padding: 70px 3% 5%;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,1));
+}
+.modal{
+  background-color: transparent;
+}
+.modal-body{
+  color: #fff;
+  background-color: #000;
+}
+.modal-dialog {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: auto;
+}
+.card{
+  background: rgba(0,0,0,.3);
+}
+.btn{
+  font-family: 'Sarpanch', Helvetica, sans-serif;
+}
+.btn-sm{
+  width: 2.5rem;
+}
+.btn-md{
+  min-height: 3rem;
+}
+.btn-big{
+  min-width: 37%;
+}
+.btn-x{
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #fff;
+  background-color: #B20000;
+  border-color: #B20000;
+}
+.btn-x:hover{
+  color: #fff;
+  background-color: #f00;
+  border-color: #f00;
+}
+.tab-content{
+  margin-bottom: 3rem;
+}
+
+/*****************************************
+1. HEADER & NAV
+*****************************************/
+.nav{
+  font-family: 'Sarpanch', Helvetica, sans-serif;
+  background: rgba(0,0,0,.3);
+}
+.navbar{
+  font-family: 'Sarpanch', Helvetica, sans-serif;
+  font-size: 1.2rem;
+  background: rgba(0,0,0,.8);
+  border-bottom: solid 1px rgba(255,0,0,.6);
+}
+.navbar-toggler{
+  color: #fff;
+  padding: .5rem;
+}
+.navbar ul{
+  list-style: none;
+  text-transform: uppercase;
+  background: none;
+  margin: 0;
+}
+.navbar a{
+  text-decoration: none;
+}
+.nav-link:focus,.nav-link:hover{
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  background-color: rgba(0,0,0,.45);
+  color: #B20000;
+}
+#page-top{
+  display: table;
+  background: url(../_images/bg3sq.jpg) no-repeat top center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+.intro-body {
+  display: table-cell;
+  vertical-align: middle;
+  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,0),rgba(0,0,0,1));
+}
+.push-to-bottom {
+  position: absolute;
+  bottom: 3%;
+  max-width: 100%
+}
+
+/*****************************************
+2. ABOUT
+*****************************************/
+#about{
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  padding: 70px 3% 5%;
+}
+#card-img-1{
+ background: url(../_images/michael-sm.jpg) no-repeat center center;
+ background-size: cover;
+ height: auto;
+ width: 100%;
+}
+#card-img-2{
+  background: url(../_images/anthony-sm.jpg) no-repeat center center;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+}
+#card-img-3{
+  background: url(../_images/randy-sm.jpg) no-repeat center center;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+}
+#about .card-block{
+  vertical-align: middle;
+}
+#about .card{
+  margin-bottom: 1rem;
+  background: none;
+  min-width: 214px;
+}
+#about .card p{
+  color: #D3D3D3;
+  font-style: italic;
+  margin: 5%;
+}
+#about .card:first-child h3{
+  margin: 5%;
+}
+
+/*****************************************
+3. DISCOGRAPHY
+*****************************************/
+#discography{
+  background: #b20000;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+}
+.tab{
+  width: 100%;
+  min-width: 217px;
+}
+#discography .card{
+  margin-bottom: 5rem;
+}
+#cover1{
+  background: url(../_images/cover01sm.png) no-repeat center center;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+}
+#cover2{
+  background: url(../_images/cover02sm.png) no-repeat center center;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+}
+#cover3{
+  background: url(../_images/cover03sm.png) no-repeat center center;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+}
+#cover4{
+  background: url(../_images/cover04sm.png) no-repeat center center;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+}
+#cover5{
+  background: url(../_images/cover05sm.png) no-repeat center center;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+}
+#cover6{
+  background: url(../_images/cover06sm.png) no-repeat center center;
+  background-size: cover;
+  height: auto;
+  width: 100%;
+}
+.tracklist tr td:not(first-child),
+.tracklist tr td:not(last-child){
+  width: 100%;
+  text-align: center;
+}
+.tracklist tr td:first-child{
+  width: auto;
+  text-align: center;
+}
+.tracklist tr td:last-child{
+  width: auto;
+  text-align: right;
+}
+/*****************************************
+4. GALLERY
+*****************************************/
+#gallery{
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+  padding: 70px 3% 5%;
+}
+#gallery .modal-dialog {
+    max-width: 980px;
+    margin: 30px auto;
+}
+.video-container{
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+.video {
+  padding-bottom: 56.25%;
+}
+.video iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+#gallery .modal-body{
+  background-color: #fff;
+  border-radius: 25%;
+  padding: 10px;
+}
+/*****************************************
+5. CONNECT
+*****************************************/
+#connect{
+  background: #b20000;
+  height: 100%;
+  width: 100%;
+  min-height: 100vh;
+}
+.social {
+  font-size: 3rem;
+}
+.radio{
+  width: 100%;
+}
+/*****************************************
+6. FOOTER
+*****************************************/
+footer{
+  padding: 15px 0;
+}
+/*****************************************
+7. MEDIA QUERIES
+*****************************************/
+@media only screen and (min-width: 300px) and (max-width: 575px){
+  .col-xs-6{
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media only screen and (min-width: 450px){
+  #page-top{
+    background: url(../_images/bg3md.png) no-repeat 71% 0% fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+  }
+  #discography{
+    background: url(../_images/bg1lg.png) no-repeat top center fixed;
+    background-size: cover;
+  }
+  #connect{
+    background: url(../_images/bg2lg.png) no-repeat center center fixed;
+    background-size: cover;
+  }
+}
+@media only screen and (min-width: 576px){
+  .tracklist tr td:last-child{
+    min-width: 100px;
+  }
+  #card-img-1{
+   background: url(../_images/michael-md.jpg) no-repeat center top;
+   background-size: cover;
+   height: 100%;
+   width: 100%;
+  }
+  #card-img-2{
+    background: url(../_images/anthony-md.jpg) no-repeat center 14%;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  #card-img-3{
+    background: url(../_images/randy-md.jpg) no-repeat center top;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+  #about .border-secondary .col-sm-6:first-child{
+    padding-right: 0;
+  }
+  #about .border-secondary .col-sm-6:last-child{
+    padding-left: 0;
+  }
+  #about .card.border-dark{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .btn-big{
+    min-width: 60%;
+    margin-bottom: .5rem;
+  }
+  .card-link+.card-link{
+    margin-left: 0;
+  }
+  .first{
+    padding: 0 10%;
+  }
+
+}
+@media only screen and (min-width: 768px){
+  #page-top{
+    background: url(../_images/bg3md.png) no-repeat 77% 0% fixed;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+  }
+  #discography .card{
+    padding: 2.5%;
+  }
+  .btn-big{
+    min-width: 60%;
+    margin-bottom: .5rem;
+  }
+  input{
+  width: 50%;
+  margin-bottom: 2%;
+  }
+  textarea{
+    width: 50%;
+    margin-bottom: 2%;
+  }
+}
+@media only screen and (min-width: 992px){
+  #about .border-secondary .col-sm-6:first-child{
+    padding-right: 15px;
+  }
+  #about .border-secondary .col-sm-6:last-child{
+    padding-left: 15px;
+  }
+  .btn-big{
+    min-width: 70%;
+    margin-bottom: .5rem;
+  }
+}
+@media only screen and (min-width: 1025px){
+  #cover1{
+    background: url(../_images/cover01lg.png) no-repeat center center;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+  }
+  #cover2{
+    background: url(../_images/cover02lg.png) no-repeat center center;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+  }
+  #cover3{
+    background: url(../_images/cover03lg.png) no-repeat center center;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+  }
+  #cover4{
+    background: url(../_images/cover04lg.png) no-repeat center center;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+  }
+  #cover5{
+    background: url(../_images/cover05lg.png) no-repeat center center;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+  }
+  #cover6{
+    background: url(../_images/cover06lg.png) no-repeat center center;
+    background-size: cover;
+    height: auto;
+    width: 100%;
+  }
+
+@media only screen and (min-width: 1162px){
+  .tab{
+    min-width: 33.3%;
+  }
+  .push-to-bottom {
+    max-width: 100%;
+  }
+  #about .card h3{
+    margin: 5 10%;
+  }
+  .first{
+    padding: 0 5%;
+  }
+}
+@media only screen and (min-width: 1200px){
+  #about .card:first-child h3{
+    font-size: 27px;
+    margin: 5% 10%;
+  }
+}
+@media only screen and (min-width: 1716px){
+  .tab{
+    min-width: 217px;
+  }
+}
+@media only screen and (min-width: 2141px){
+  .col-lg-10{
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+}
