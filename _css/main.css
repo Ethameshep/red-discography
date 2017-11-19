@@ -251,7 +251,7 @@ a:hover,a:active{
 }
 .tracklist tr td:last-child{
   width: auto;
-  text-align: right;
+  text-align: center;
 }
 /*****************************************
 4. GALLERY
@@ -334,9 +334,6 @@ footer{
   }
 }
 @media only screen and (min-width: 576px){
-  .tracklist tr td:last-child{
-    min-width: 100px;
-  }
   #card-img-1{
    background: url(../_images/michael-md.jpg) no-repeat center top;
    background-size: cover;
@@ -396,8 +393,8 @@ footer{
   margin-bottom: 2%;
   }
   textarea{
-    width: 50%;
-    margin-bottom: 2%;
+  width: 50%;
+  margin-bottom: 2%;
   }
 }
 @media only screen and (min-width: 992px){
